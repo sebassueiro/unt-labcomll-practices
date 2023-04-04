@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Llenar el siguiente formulario para iniciar secion</h1>
+    <h4>
+      Para ingresar debes escribir el nombre de usuario y clave aca debajo
+    </h4>
+    <form action="/accion.php">
+      <label for="campoDeTexto">Usuario:</label>
+      <input
+        type="text"
+        id="campoDeTexto"
+        name="campoDeTexto"
+        placeholder="s.sueiro@hotmail.com"
+      />
+      <label for="contrasena">Contraseña:</label>
+      <input
+        type="password"
+        id="campoDeClave"
+        name="campoDeClave"
+        value="sebastian"
+      />
+      <br />
+      <br />
+      <label for="recordarContra">Recordar contraseña</label>
+      <input type="checkbox" id="checkbox" name="checkbox" />
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>

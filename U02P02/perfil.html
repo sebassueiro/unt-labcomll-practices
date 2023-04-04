@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+<body>
+    <h1>Datos Personales del Estudiante</h1>
+    <form action="/accion.php" method="post" target="_blank">
+        <fieldset>
+        <input  value="ESTUDIANTE" required>
+        <br>
+        <br>
+        <label for="campoDeTexto">Nombre:</label>
+        <input type="text" id="campoDeTexto" name="campoDeTexto" placeholder="Ingrese su nombre completo">
+        <br>
+        <br>
+        <label for="mail">Mail:</label>
+        <input type="text" id="mail" name="mail" placeholder="Ej:s.sueiro@hotmail.com">
+        <br>
+        <br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" placeholder="19">
+        <br>
+        <br>
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select name="selacNacionalidad" id="selacNacionalidad">
+            <option value="Argentino">Argentino</option>
+            <option value="Brasilero">Brasilero</option>
+            <option value="Uruguayo">Uruguayo</option>
+            <option value="Paraguayo">Paraguayo</option>
+            <option value="Chileno">Chileno</option>
+        </select>
+        <br>
+        <br>
+        <label for="condicionLaboral">Condicion Laboral:</label>
+        <select name="selecLaboral" id="selecLaboral">
+            <option value="Desempleado">Desempleado</option>
+            <option value="En busqueda laboral">En busqueda laboral</option>
+            <option value="Trabajo part-time">Trabajo part-time</option>
+            <option value="Trabajo full-time">Trabajo full-time</option>
+        </select>
+        <br>
+        <br>
+        <h3>Gustos Personales:</h3>
+        <label for="campoDeGustosMusicales">Gusto Musicales:</label>
+        <input type="text" name="campoDeGustosMusicales" id="campoDeGustosMusicales" placeholder="Rock">
+        <br>
+        <br>
+        <label for="comidasPreferidas">Comidas Preferidas:</label>
+        <select name="selecComidas" id="selecComidas">
+            <option value="Pizza">Pizza</option>
+            <option value="Asado">Asado</option>
+            <option value="Hamburguesa">Hamburguesa</option>
+            <option value="Sushi">Sushi</option>
+        </select>
+        <br>
+        <br>
+        <label for="recordarDatos">Recordar Datos</label>
+      <input type="checkbox" id="checkbox" name="checkbox"/>
+      <br>
+      <br>
+      <input type="submit" value="Enviar">
+    </fieldset>
+    </form>
+</body>
+</html>
